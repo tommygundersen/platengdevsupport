@@ -1,0 +1,44 @@
+{
+  "name": "architecture-patterns",
+  "version": "1.0.0",
+  "description": "Authoritative source for approved application architecture patterns",
+  "type": "context-provider",
+  "layer": "1-authoritative",
+  "resources": [
+    {
+      "id": "adr-001",
+      "type": "architecture-decision-record",
+      "path": "./adr/001-microservices-architecture.md"
+    },
+    {
+      "id": "adr-002",
+      "type": "architecture-decision-record",
+      "path": "./adr/002-api-gateway-pattern.md"
+    },
+    {
+      "id": "adr-003",
+      "type": "architecture-decision-record",
+      "path": "./adr/003-database-per-service.md"
+    },
+    {
+      "id": "pattern-web-api",
+      "type": "reference-architecture",
+      "path": "./patterns/web-api.md"
+    },
+    {
+      "id": "pattern-spa-frontend",
+      "type": "reference-architecture",
+      "path": "./patterns/spa-frontend.md"
+    },
+    {
+      "id": "pattern-event-driven",
+      "type": "reference-architecture",
+      "path": "./patterns/event-driven.md"
+    }
+  ],
+  "metadata": {
+    "maintainer": "Platform Engineering Team",
+    "lastUpdated": "2026-04-07",
+    "reviewCycle": "quarterly"
+  }
+}
