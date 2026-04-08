@@ -2,6 +2,58 @@
 
 A comprehensive framework for guiding GitHub Copilot to follow organizational best practices, architectural patterns, and compliance requirements.
 
+## ⚠️ Disclaimer
+
+**This repository is provided for demonstration and educational purposes only.** There are no warranties, express or implied. The content may contain errors, omissions, or outdated information. Use at your own risk.
+
+### Note on MCP Servers vs Markdown
+
+This repository contains architectural and security context as **Markdown files** for clarity and portability. In a production setup, parts of this context (e.g., policy checks, architecture registries, environment metadata) would typically be exposed via **running MCP servers** rather than static files.
+
+MCP (Model Context Protocol) servers provide dynamic, programmatic access to organizational context, enabling:
+- Real-time policy validation
+- Live architecture registry queries
+- Environment-specific configuration
+- Audit logging and compliance tracking
+
+This demonstration uses static Markdown to simplify the proof-of-concept and make it accessible without infrastructure dependencies.
+
+#### When you SHOULD use a real MCP server
+
+Use a real MCP server when the context is:
+
+✅ **Dynamic**  
+✅ **Environment-specific**  
+✅ **Security-sensitive**  
+✅ **Large or frequently changing**  
+✅ **Needs validation or computation**
+
+**Examples:**
+
+- "Which landing zones exist?"
+- "Is this API classified as PII?"
+- "Which SDK version is approved today?"
+- "What controls apply in region X?"
+
+These do not belong in Markdown.
+
+#### When Markdown is actually better
+
+Markdown is ideal when the content is:
+
+✅ **Normative** ("this is how we do things")  
+✅ **Long-lived**  
+✅ **Explanatory**  
+✅ **Human-readable**  
+✅ **Versioned with review**
+
+**Examples:**
+
+- ADRs
+- Golden path descriptions
+- SDK usage philosophy
+- Architecture patterns
+
 ## 🚀 Quick Start for Developers
 
 ### Step 1: Set Up Your Workspace (5 minutes)
